@@ -3,16 +3,21 @@ var config = {
     height: 640,
     renderer: Phaser.AUTO,
     parent: "game-container",
+    transparent: false,
     antialias: true,
-    multiTexture: true
+    multiTexture: true,
+    state: this
 };
 
 var game = new Phaser.Game(config);
 
-game.state.add('boot', bootState);
-game.state.add('load', loadState);
-game.state.add('menu', menuState);
-game.state.add('play', playState);
-game.state.add('win', winState);
+function create () {
+  var graphics = game.add.graphics(0, 0);
 
-game.state.start(boot);
+  graphics.beginFill(0x90c146, 1);
+  graphics.drawCircle(300, 300, 100);
+
+  game.physics.enable(graphics, Phaser.Physics.ARCADE);
+
+  graphics.body.velocity.x = 150;
+}
