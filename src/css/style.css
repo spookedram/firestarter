@@ -1,0 +1,35 @@
+/*
+Phaser Test CSS :: Zach Allen :: 2016.09.21
+
+Color Palette:
+Dark Purple   - 3C153B
+Eggplant      - 624763
+Carmine Pink  - DB4C40
+Sunset Orange - F05D5E
+Papaya Whip   - FDF0D5
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #3C153B;
+	color: #FDF0D5;
+	font-family: 'Muli', 'Arial', sans-serif;
+	text-align: center;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+}
+div {
+	margin: 0;
+	margin-top: 16px;
+}
+canvas {
+	margin: 0 auto;
+	border: 2px solid #624763;
+}
+p {
+	text-align: right;
+	color: #F05D5E;
+}
