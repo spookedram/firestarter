@@ -1,15 +1,15 @@
 var config = {
-    width: 960,
-    height: 640,
-    renderer: Phaser.AUTO,
-    parent: "game-container",
-    transparent: false,
-    antialias: true,
-    multiTexture: true,
-    state: this
+  width: 960,
+  height: 640,
+  renderer: Phaser.AUTO,
+  parent: "game-container",
+  transparent: false,
+  antialias: true,
+  multiTexture: true,
+  state: this
 };
 
-var game = new Phaser.Game(config);
+window.game = new Phaser.Game(config);
 
 function create () {
   var graphics = game.add.graphics(0, 0);
