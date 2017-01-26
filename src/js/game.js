@@ -11,7 +11,7 @@ var config = {
 
 window.game = new Phaser.Game(config);
 
-function create () {
+function create() {
   var graphics = game.add.graphics(0, 0);
 
   graphics.beginFill(0x90c146, 1);
