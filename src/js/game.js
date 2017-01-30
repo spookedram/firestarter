@@ -12,12 +12,11 @@ var config = {
 window.game = new Phaser.Game(config);
 
 function create() {
-  var graphics = game.add.graphics(0, 0);
+  var graphics = game.add.graphics(0, 0),
+    text = game.add.text(game.world.centerX, 32, "Firestarter", {fill: "#FDF0D5"});
 
-  graphics.beginFill(0x90c146, 1);
-  graphics.drawCircle(300, 300, 100);
+  graphics.beginFill(0xDB4C40, 1);
+  graphics.drawCircle(480, 320, 100);
 
-  game.physics.enable(graphics, Phaser.Physics.ARCADE);
-
-  graphics.body.velocity.x = 150;
+  text.anchor.x = 0.5;
 }
